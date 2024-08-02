@@ -27,6 +27,7 @@
         
         window.addEventListener("scroll" , () => {
             let scrollbar = document.documentElement.scrollTop;
+            // this section will git the current hieght based on scrollbar from right of the page 
             scrollElement.style.width = `${(scrollbar/currentPageHeight)*100}%`;
         })
     }
