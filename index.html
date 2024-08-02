@@ -18,4 +18,20 @@
     </header>
     
     </body>
+      <script>
+          
+    function scrollbar(){
+
+        let scrollElement = document.querySelector(".scroller");
+        let currentPageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        
+        window.addEventListener("scroll" , () => {
+            let scrollbar = document.documentElement.scrollTop;
+            scrollElement.style.width = `${(scrollbar/currentPageHeight)*100}%`;
+        })
+    }
+    scrollbar()
+
+
+    </script>
 </html>
